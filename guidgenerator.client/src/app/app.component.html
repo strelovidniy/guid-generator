@@ -1,0 +1,21 @@
+﻿<div class="container">
+    <div class="guids">
+        @for (guid of guids; track $index) {
+        <div class="guid">
+            {{ $index + 1 }}. {{ guid }}
+        </div>
+        }
+    
+        @if (guids.length === 0) {
+        <div class="guid">
+            No guids generated yet.
+        </div>
+        }
+    </div>
+    
+    <button (click)="generateGuid()">
+        <span>
+            Generate Guid
+        </span>
+    </button>
+</div>

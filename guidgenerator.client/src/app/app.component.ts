@@ -5,9 +5,10 @@ import environment from '../environments/environment';
 
 
 @Component({
-	selector: 'app-root',
-	templateUrl: './app.component.html',
-	styleUrl: './app.component.css'
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    standalone: false
 })
 export default class AppComponent {
 	public guids: string[] = [];
